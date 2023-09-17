@@ -1,0 +1,34 @@
+<!-- 
+Created by: Gustavo Zanatta Bulhões
+E-mail: gustavozbulhoes@gmail.com 
+-->
+<template>
+
+  <!--Creates the left and right columns-->
+  <div class="slds-grid slds-wrap">
+    <!--Left Side-->
+    <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_1-of-1">
+      <div class="blueLeftBackground">
+        <!-- insert the image -->
+        <div class="img">
+          <img src={RESUME_DATA.PROFILE_IMAGE} class="profile_pic"/> 
+        </div>
+        <!-- insert the boxes informations -->
+        <div class="leftContainer"><c-resume-contact-me details={RESUME_DATA.CONTACT_ME}></c-resume-contact-me></div>
+        <div class="leftContainer"><c-resume-certification  details={RESUME_DATA.SALESFORCE_CERTIFICATIONS}></c-resume-certification></div>
+        <div class="lastleftContainer"><c-resume-certification  details={RESUME_DATA.OTHER_CERTIFICATIONS}></c-resume-certification></div>
+      </div>
+    </div>
+      <!--Right Side-->
+    <div class="slds-col slds-large-size_8-of-12 slds-medium-size_8-of-12 slds-size_1-of-1 teste">
+      <div class="rightContainer"><c-resume-header details={RESUME_DATA.USER_DETAILS}></c-resume-header></div>
+      <div class="rightContainer"><c-resume-education details={RESUME_DATA.EDUCATION}></c-resume-education></div>
+      <div class="rightContainer"><c-resume-skill-points details={RESUME_DATA.TECH_SKILLS}></c-resume-skill-points></div>
+      <div class="rightContainer"><c-resume-experience details={RESUME_DATA.EXPERIENCE_DATA}></c-resume-experience></div>
+    </div>
+  </div>
+  <!-- footer container -->
+  <div class="slds-m-top_x-small">
+    <c-resume-footer-container></c-resume-footer-container>
+  </div>
+</template>

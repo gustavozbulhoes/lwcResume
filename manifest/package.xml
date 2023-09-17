@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>resumeController</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Resume_Feedbacks__c.E_mail__c</members>
+		<members>Resume_Feedbacks__c.Feedback__c</members>
+		<members>Resume_Feedbacks__c.Name__c</members>
+		<members>Resume_Feedbacks__c.Status__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Resume_Feedbacks__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>resumeCertification</members>
+		<members>resumeContactMe</members>
+		<members>resumeContainer</members>
+		<members>resumeEducation</members>
+		<members>resumeExperience</members>
+		<members>resumeFooterAbout</members>
+		<members>resumeFooterContainer</members>
+		<members>resumeFooterFeedback</members>
+		<members>resumeHeader</members>
+		<members>resumeSkillPoints</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>55.0</version>
+</Package>

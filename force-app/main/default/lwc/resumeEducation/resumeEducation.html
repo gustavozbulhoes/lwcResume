@@ -1,0 +1,31 @@
+<!-- 
+Created by: Gustavo Zanatta Bulhões
+E-mail: gustavozbulhoes@gmail.com 
+-->
+
+<template>
+    <!-- Title -->
+    <div class="slds-text-heading_large">
+        <p class="title">
+            <lightning-icon icon-name={details.ICON} 
+            alternative-text='Education' 
+            size='medium' 
+            title='Education'
+            class="slds-var-m-right_small"></lightning-icon> 
+            <b>{details.TITLE}</b>
+        </p>
+    </div>
+    
+    <!--Courses-->
+    <template for:each={details.ITEMS} for:item="item">
+        <p key={item.KEY} class="degree">
+            <b>{item.Degree}</b>
+        </p>
+        <a href={item.LINK} target={item.LINK_TARGET} key={item.KEY}>
+            <p key={item.university} class="university">{item.University}</p>
+        </a>
+    </template>
+
+    </template>
+    
+</template>

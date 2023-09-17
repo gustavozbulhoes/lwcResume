@@ -1,0 +1,22 @@
+<template>
+    <div class="content">
+        <lightning-card title="Give a feedback to improve!">
+            <div class="slds-p-around_medium">
+                <form class="createForm">
+                    <lightning-input label="Name (optional)" name="Name__c"
+                     onchange={changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+                     <lightning-input label="E-mail (optional)" type="Email" name="E_mail__c"
+                     onchange={changeHandler} class="slds-m-bottom_x-small"></lightning-input>  
+                     <div class="fieldname">Feedback:</div>
+                     <lightning-input-rich-text label="Feedback" name="Feedback__c" formats={formats}
+                     onchange={changeHandler} class="slds-m-bottom_x-small"></lightning-input-rich-text>
+                     <lightning-button label="Send Feedback" variant="brand" onclick={createFeedback}></lightning-button>
+                </form>
+            </div>
+        </lightning-card>
+    </div>
+    <!--Spinner Loading-->
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+</template>

@@ -1,0 +1,16 @@
+.whitebackground{
+    background-color: white;
+}
+
+.fieldname{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    display: inline-block;
+    color: var(--lwc-colorTextLabel,#696969);
+    padding-right: var(--lwc-spacingXSmall,0.5rem);
+    padding-top: var(--lwc-spacingXxSmall,0.25rem);
+    margin-bottom: var(--lwc-spacingXxxSmall,0.125rem);
+}

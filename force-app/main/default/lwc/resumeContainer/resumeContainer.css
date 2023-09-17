@@ -1,0 +1,36 @@
+.blueLeftBackground{
+    background: rgba(13, 18, 87, 0.979);
+}
+
+.profile_pic{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+img.profile_pic{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.img{
+    padding:40px;
+}
+
+.rightContainer {
+    margin-left: 10%;    
+    margin-bottom: 7%;
+  }
+.leftContainer{
+    margin-left: auto;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+.lastleftContainer{
+    margin-left: auto;
+    margin-top: 3%;
+    margin-right:30px;
+    padding-bottom: 10px;
+}

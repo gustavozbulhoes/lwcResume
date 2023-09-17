@@ -1,0 +1,33 @@
+<!-- 
+Created by: Gustavo Zanatta Bulhões
+E-mail: gustavozbulhoes@gmail.com 
+-->
+<template>
+    <div class="slds-m-left_xx-large">
+        <!-- title of the box-->
+        <div class="slds-text-title_caps slds-m-bottom_x-small title">
+          <b>{details.TITLE}</b>
+        </div>
+        <!--Content of the box -->
+        <template for:each={details.ITEMS} for:item="item">
+            <!-- with hyperlink -->
+            <template if:true={item.LINK}>
+                <a href={item.LINK} class="link" key={item.KEY} target={item.LINK_TARGET}>
+                    <div class="slds-m-bottom_x-small link" key={item.KEY}>
+                        <lightning-icon icon-name={item.ICON} alternative-text={item.ICON_ALTERNATIVE_TEXT} size="x-small"
+                        title={item.ICON_TITLE} class="slds-var-m-right_small"></lightning-icon>
+                        {item.TEXT} 
+                    </div>
+                </a> 
+            </template>
+            <!-- without hyperlink -->
+            <template if:false={item.LINK}>
+                    <div class="slds-m-bottom_x-small link" key={item.KEY}>
+                        <lightning-icon icon-name={item.ICON} alternative-text={item.ICON_ALTERNATIVE_TEXT} size="x-small"
+                        title={item.ICON_TITLE} class="slds-var-m-right_small"></lightning-icon>
+                        {item.TEXT} 
+                    </div>
+            </template>
+        </template>
+    </div>
+</template>

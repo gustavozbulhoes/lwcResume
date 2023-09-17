@@ -1,0 +1,15 @@
+.title{
+    font-size: 1.25rem;
+    color: #1a3179;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+.university{
+    font-size: 18px;
+    color: #1a3179;
+}
+.degree{
+    font-size: 18px;
+    color: #1a3179;
+}

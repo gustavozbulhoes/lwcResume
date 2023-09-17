@@ -1,0 +1,45 @@
+.title{
+  font-family: 'Poppins';
+  color: #12175A;
+  font-size: 40px;
+}
+
+
+.role {
+  border-right: 2px solid rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Poppins';
+  color: #12175A;
+  font-size: 25px;
+}
+  
+/* fade in animation */
+.anim-fadein{
+  animation: mainFadeIn 3s forwards;
+  animation-delay: 1s;
+  opacity: 0; 
+}
+
+@keyframes mainFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* type writing animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 0s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

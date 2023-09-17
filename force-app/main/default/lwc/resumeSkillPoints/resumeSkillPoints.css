@@ -1,0 +1,18 @@
+.badge{
+    background-color: rgba(13, 18, 87, 0.979);
+    color: white;
+    margin-left:2px;
+    margin-bottom:2px;
+  }
+  .title{
+    font-size: 1.25rem;
+    color: #1a3179;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+  }
+  .SubTitle{
+    font-size:15px;
+    color: #1a3179;
+    margin-top: 14px;
+  }

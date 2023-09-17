@@ -1,0 +1,23 @@
+<!-- 
+Created by: Gustavo Zanatta Bulhões
+E-mail: gustavozbulhoes@gmail.com 
+-->
+
+<template>
+    <div class="slds-m-left_xx-large" >
+
+        <!-- title of the box-->
+        <div class="slds-text-title_caps slds-m-bottom_x-small leftTitle">
+            <b>{details.TITLE}</b>
+        </div>
+
+        <!--Content of the box -->
+        <template for:each={details.ITEMS} for:item="item">
+             <div class="slds-m-bottom_x-small link" key={item}>
+                 <img src={details.IMG} alt="icon" width="20px" class="slds-var-m-right_xx-small" key={item}/>
+                {item}
+            </div>
+        </template>
+
+    </div>
+</template>
