@@ -28,5 +28,10 @@
 		<members>resumeSkillPoints</members>
 		<name>LightningComponentBundle</name>
 	</types>
+	<types>
+		<members>RESUMEICONS</members>
+		<members>gustavo</members>
+		<name>StaticResource</name>
+	</types>
 	<version>55.0</version>
 </Package>
